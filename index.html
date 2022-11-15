@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css"
+      integrity="sha512-2eMmukTZtvwlfQoG8ztapwAH5fXaQBzaMqdljLopRSA0i6YKM8kBAOrSSykxu9NN9HrtD45lIqfONLII2AFL/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css"
+      integrity="sha512-zxBiDORGDEAYDdKLuYU9X/JaJo/DPzE42UubfBw9yg8Qvb2YRRIQ8v4KsGHOx2H1/+sdSXyXxLXv5r7tHc9ygg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h3 id="head">ADD IMAGE/ICON</h3>
+    </div>
+    <div class="mainbody">
+      <h2>Upload Image</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form id="form1" runat="server">
+              <input type="file" id="inputimage" />
+              <img id="my-image" src="#" />
+            </form>
+            <button id="use">Result</button>
+            <img id="result" src="" />
+          </div>
+        </div>
+      </div>
+      <div class="mask">
+        <h2>Select Frame</h2>
+        <div class="framecontainer">
+          <button class="btn" id="mask1">
+            <img src="/mask/user_image_frame_1.png" alt="heart" class="frame" />
+          </button>
+          <button class="btn" id="mask2">
+            <img src="/mask/user_image_frame_2.png" alt="" class="frame" />
+          </button>
+          <button class="btn" id="mask3">
+            <img src="/mask/user_image_frame_3.png" alt="" class="frame" />
+          </button>
+          <button class="btn" id="mask4">
+            <img src="/mask/user_image_frame_4.png" alt="" class="frame" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Using croppie JS For cropping the images -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"
+    integrity="sha512-Gs+PsXsGkmr+15rqObPJbenQ2wB3qYvTHuJO6YJzPe/dTLvhy0fmae2BcnaozxDo5iaF8emzmCZWbQ1XXiX2Ig=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.js"
+    integrity="sha512-vUJTqeDCu0MKkOhuI83/MEX5HSNPW+Lw46BA775bAWIp1Zwgz3qggia/t2EnSGB9GoS2Ln6npDmbJTdNhHy1Yw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+</html>
