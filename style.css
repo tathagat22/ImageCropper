@@ -1,30 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
-.navbar {
+.navbar1 {
   background-color: rgb(222, 221, 221);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   height: 60px;
   width: 100%;
-  margin-top: -30px;
   font-family: "Syne Mono", monospace;
-}
-#head {
-  font-size: 30px;
-}
-.row {
-  height: 100vh;
-}
-#my-image,
-#use {
-  display: none;
 }
 .frame {
   height: 90px;
   width: 90px;
 }
-.btn {
-  border-style: none;
-  background-color: white;
+.disp-none{
+  display:none;
+}
+.container-form{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:50px;
+  padding-bottom:0;
+}
+.container-image{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+}
+#confirm-img{
+  height: 218px;
+  border-radius: 4px;
+}
+body{
+background-color: rgb(255, 255, 255);
+}
+#upload-aphoto{
+  background: red;
+  border-color:red;
 }
 .mask1 {
   -webkit-mask-box-image: url(/mask/user_image_frame_1.png);
@@ -38,13 +52,7 @@
 .mask4 {
   -webkit-mask-box-image: url(/mask/user_image_frame_4.png);
 }
-.mainbody{
-    border-style: dashed;
-    border-color: rgb(93, 255, 93);
-    margin-top: 20px;
-    text-align: center;
-    font-family: "Syne Mono", monospace;
+.framecontainer{
+  text-align: center;
+  font-family: "Syne Mono", monospace;
 }
-/* .mask{
-    margin-bottom: 160px;
-} */
